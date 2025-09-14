@@ -1,0 +1,197 @@
+#+TITLE: AlFolio website template
+#+AUTHOR: José Pires
+#+DATE: [2025-09-14 dom 19:24]
+#+EMAIL: a50178@alunos.uminho.pt
+
+#+LATEX_COMPILER: xelatex
+
+* TOC :noexport::TOC_3:
+- [[#preamble][Preamble]]
+- [[#installation][Installation]]
+- [[#customization][Customization]]
+  - [[#project-structure][project structure]]
+  - [[#configuration][Configuration]]
+  - [[#about][about]]
+  - [[#blog][blog]]
+  - [[#pages][pages]]
+  - [[#projects][projects]]
+  - [[#repositories][repositories]]
+  - [[#cv][CV]]
+  - [[#socials][Socials]]
+  - [[#submenus][submenus]]
+  - [[#news][News]]
+  - [[#publications][publications]]
+- [[#workflow][Workflow]]
+
+* Preamble
+The AlFolio template is based on Jekyll and allows for a fast and continuous
+deployment of a webpage, hosted by github-pages.
+
+* Installation
+see [[file:INSTALL.md][INSTALL.md]]
+
+* Customization
+see [[file:CUSTOMIZE.md][CUSTOMIZE.md]]
+
+** project structure
+
+#+begin_example
+.
+├── 📂 assets/: contains the assets that are displayed in the website
+│   └── 📂 json/
+    │   └── 📄 resume.json: CV in JSON format (https://jsonresume.org/)
+├── 📂 _bibliography/
+│   └── 📄 papers.bib: bibliography in BibTeX format
+├── 📂 _books/: contains the bookshelf pages
+├── 📄 _config.yml: the configuration file of the template
+├── 📂 _data/: contains some of the data used in the template
+│   ├── 📄 cv.yml: CV in YAML format, used when assets/json/resume.json is not found
+│   ├── 📄 repositories.yml: users and repositories info in YAML format
+│   └── 📄 socials.yml: your social media and contact info in YAML format
+├── 📂 _includes/: contains code parts that are included in the main HTML file
+│   └── 📄 news.liquid: defines the news section layout in the about page
+├── 📂 _layouts/: contains the layouts to choose from in the frontmatter of the Markdown files
+├── 📂 _news/: the news that will appear in the news section in the about page
+├── 📂 _pages/: contains the pages of the website
+|   └── 📄 404.md: 404 page (page not found)
+├── 📂 _posts/: contains the blog posts
+├── 📂 _projects/: contains the projects
+└── 📂 _sass/: contains the SASS files that define the style of the website
+    ├── 📄 _base.scss: base style of the website
+    ├── 📄 _cv.scss: style of the CV page
+    ├── 📄 _distill.scss: style of the Distill articles
+    ├── 📄 _layout.scss: style of the overall layout
+    ├── 📄 _themes.scss: themes colors and a few icons
+    └── 📄 _variables.scss: variables used in the SASS files
+#+end_example
+
+
+
+** Configuration
+:PROPERTIES:
+:ID:       e5a761cd-bffa-40a5-be4f-fded2430bc1b
+:END:
+The configuration file [[file:_config.yml][_config.yml]] contains the main
+configuration of the website. Most of the settings is self-explanatory and we
+also tried to add as much comments as possible. If you have any questions,
+please check if it was not already answered in the [FAQ](FAQ.md).
+
+For example, you can select what files to include and exclude:
+
+#+begin_src yaml
+  # Includes & excludes
+  include: ["_pages", "_scripts"]
+  exclude:
+    - bin/
+    - CONTRIBUTING.md
+    - CUSTOMIZE.md
+    - Dockerfile
+    - docker-compose.yml
+    - docker-compose-slim.yml
+    - FAQ.md
+    - Gemfile
+    - Gemfile.lock
+    - INSTALL.md
+    - LICENSE
+    - lighthouse_results/
+    - package.json
+    - package-lock.json
+    - _pages/about_einstein.md
+    - purgecss.config.js
+    - README.md
+    - readme_preview/
+    - vendor
+    - _pages/teaching.md
+    - _pages/profiles.md
+    - _projects/1_project_bkp.md
+    - _pages/publications.md
+    - readme-mine.org
+  keep_files:
+    - CNAME
+    - .nojekyll
+#+end_src
+
+** about
+- customize [[file:_pages/about.md][_pages/about.md]] 
+
+** blog
+- customize [[file:_pages/blog.md][_pages/blog.md]] 
+- Add posts in [[file:_posts/][_posts/]]
+
+** pages
+
+** projects
+- Update in [[file:_pages/projects.md][_pages/projects.md]]
+  - the description
+  - the display categories
+- Update the actual projects or add a new one in [[file:_projects/][_projects/]]
+  - For example: [[file:_projects/1_project.md][1_project.md]]
+  - See also [[file:_projects/1_project_bkp.md][1_project-bkp.md]] for some tips
+
+** repositories
+- Update the repositories in [[file:_data/repositories.yml][_data/repositories.yml]]
+- Update the description in [[file:_pages/repositories.md::description: List of online repositories.][_pages/repositories.md]]
+
+** CV
+- To add the CV PDF as an asset:
+  - add it to [[file:assets/pdf/CV.pdf][assets/pdf]]
+  - Add the name in [[file:_pages/cv.md][_pages/cv.md]]
+- Update the CV information in [[file:_data/cv.yml][_data/cv.yml]]
+  
+
+** Socials
+- Update your social networks in [[file:_data/socials.yml][_data/socials.yml]]
+
+** submenus
+
+** News
+- For now, they are excluded from the about.md page
+  #+begin_src markdown
+    announcements:
+      enabled: false # includes a list of news items
+      scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+      limit: 5 # leave blank to include all the news in the `_news` folder
+  #+end_src
+- Update/add news to [[file:_news/]] 
+
+** publications
+- For now they are excluded (see [[id:e5a761cd-bffa-40a5-be4f-fded2430bc1b][Configuration]])
+- Update or add new publications in [[file:_bibliography/papers.bib][_biliography/papers.bib]] 
+
+* Workflow
+1) Alfolio provides a basic Docker container that allows real-time visualization
+   of the modifications to the webpage
+   1) To run the container:
+      #+begin_src bash
+	docker compose pull
+	docker compose up
+      #+end_src
+2) Modify the desired webpages
+3) Run prettier to ensure remote CI tests will be passed
+   #+begin_src bash
+     docker run --rm -it \
+  -v "$PWD":/app \
+  -w /app \
+  node:20 sh -c "npm install && npx prettier --write ."
+   #+end_src
+   - ~node:20~ is an official image that has ~node~, ~npm~ and ~npx~
+   - ~-v "$PWD":/app~: mounts your current project into the containee
+   - ~-w /app~: sets the working directory inside the container
+   - ~sh -c~: execute a command in the
+     shell and then exit
+   - ~"npm install && npx prettier --write ."~: install all the dev dependencies
+     listed in your ~package.json~ (including ~Prettier~ and the plugin); runs
+     ~prettier~ with the just-installed local version
+   - This will format your files and apply the changes directly in your local
+     project folder.
+   - ~--rm -it~: runs an ephemeral container in interactive mode, which leaves the
+     host clean, but still aplies the formatting changes to your files
+4) Add the files to the staging area and commit then
+   #+begin_src bash
+     git add . && git commit -m "UPDT: myfiles"
+   #+end_src
+5) Push them to remote
+   #+begin_src bash
+     git push -u origin main
+   #+end_src
+     

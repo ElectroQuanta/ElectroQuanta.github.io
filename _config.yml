@@ -196,6 +196,7 @@ exclude:
   - _pages/profiles.md
   - _projects/1_project_bkp.md
   - _pages/publications.md
+  - readme-mine.org
 keep_files:
   - CNAME
   - .nojekyll
