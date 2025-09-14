@@ -1,81 +1,99 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Marketing Digital Outdoor (MDO)
+description: marketing scenting device with video and audio capabilities
+img: assets/img/hw-all-crop.jpg
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The Marketing Digital Outdoor (MDO) is a marketing scenting device with video
+and audio capabilities which allows the user to interact with the device through
+hand gestures.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager"
+    path="assets/img/hw-all-crop.jpg" title="MDO prototype" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    MDO prototype
 </div>
+
+
+--- 
+
+## Features [10/10]
+1. [X] Advertising through a screen and speakers;
+2. [X] Have fragrance diffusion;
+3. [X] Take pictures and GIFs;
+4. [X] Detect a user in range of the device;
+5. [X] Contactless user interaction through gesture recognition;
+6. [X] Camera feed and facial detection;
+7. [X] Apply brand-specific image filters;
+8. [X] Enable sharing multimedia across social media;
+9. [X] Provide a remote user interface for brands to purchase and configure the advertisements;
+10. [X] Provide a remote user interface for company staff to monitor and control the MDO local system.
+
+--- 
+
+## Technologies [13/13]
+1. [X] Computer vision for facial and gesture recognition (OpenCV)
+2. [X] Database for marketing digital outdoor management (SQL)
+3. [X] Website/Application for brands communication to our database
+4. [X] Wireless communication technology for remote communication with digital outdoors
+5. [X] Image filter application
+6. [X] Infrared detection
+7. [X] Camera recording
+8. [X] Audio output
+9. [X] Nebulizer technology for scenting
+10. [X] Screen mapping to keys for virtual keyboard
+11. [X] Social media and e-mail sharing APIs
+12. [X] Embedded Linux to support the device features
+13. [X] Qt for UI development
+
+---
+
+# HW architecture
+
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager"
+    path="assets/img/hw-arch.jpg" title="HW arch overview" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    HW architecture overview
 </div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager"
+    path="assets/img/hw-arch-complete.jpg" title="HW architecture mapping" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    HW mapping
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
 
-{% raw %}
+# SW architecture
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager"
+    path="assets/img/sys-overview.jpg" title="SW architecture" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
+<div class="caption">
+    SW architecture
+</div>
 
-{% endraw %}
+---
+
+# References
+- https://github.com/ElectroQuanta/MDO
