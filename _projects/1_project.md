@@ -22,42 +22,42 @@ hand gestures.
     MDO prototype
 </div>
 
-
---- 
+---
 
 ## Features [10/10]
-1. [X] Advertising through a screen and speakers;
-2. [X] Have fragrance diffusion;
-3. [X] Take pictures and GIFs;
-4. [X] Detect a user in range of the device;
-5. [X] Contactless user interaction through gesture recognition;
-6. [X] Camera feed and facial detection;
-7. [X] Apply brand-specific image filters;
-8. [X] Enable sharing multimedia across social media;
-9. [X] Provide a remote user interface for brands to purchase and configure the advertisements;
-10. [X] Provide a remote user interface for company staff to monitor and control the MDO local system.
 
---- 
+1. [x] Advertising through a screen and speakers;
+2. [x] Have fragrance diffusion;
+3. [x] Take pictures and GIFs;
+4. [x] Detect a user in range of the device;
+5. [x] Contactless user interaction through gesture recognition;
+6. [x] Camera feed and facial detection;
+7. [x] Apply brand-specific image filters;
+8. [x] Enable sharing multimedia across social media;
+9. [x] Provide a remote user interface for brands to purchase and configure the advertisements;
+10. [x] Provide a remote user interface for company staff to monitor and control the MDO local system.
+
+---
 
 ## Technologies [13/13]
-1. [X] Computer vision for facial and gesture recognition (OpenCV)
-2. [X] Database for marketing digital outdoor management (SQL)
-3. [X] Website/Application for brands communication to our database
-4. [X] Wireless communication technology for remote communication with digital outdoors
-5. [X] Image filter application
-6. [X] Infrared detection
-7. [X] Camera recording
-8. [X] Audio output
-9. [X] Nebulizer technology for scenting
-10. [X] Screen mapping to keys for virtual keyboard
-11. [X] Social media and e-mail sharing APIs
-12. [X] Embedded Linux to support the device features
-13. [X] Qt for UI development
+
+1. [x] Computer vision for facial and gesture recognition (OpenCV)
+2. [x] Database for marketing digital outdoor management (SQL)
+3. [x] Website/Application for brands communication to our database
+4. [x] Wireless communication technology for remote communication with digital outdoors
+5. [x] Image filter application
+6. [x] Infrared detection
+7. [x] Camera recording
+8. [x] Audio output
+9. [x] Nebulizer technology for scenting
+10. [x] Screen mapping to keys for virtual keyboard
+11. [x] Social media and e-mail sharing APIs
+12. [x] Embedded Linux to support the device features
+13. [x] Qt for UI development
 
 ---
 
 # HW architecture
-
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -96,4 +96,5 @@ hand gestures.
 ---
 
 # References
+
 - https://github.com/ElectroQuanta/MDO

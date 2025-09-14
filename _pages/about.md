@@ -34,7 +34,7 @@ Minho in the end of 2014.
 However, soon after that, I was challenged to build and program a novel
 multi-material 3D printing machine using Selective Laser Sintering/Melting
 (SLS/M). I quickly realized this was a major oportunity to learn and grow, but I
-also aware of my lack of expertise in some areas. 
+also aware of my lack of expertise in some areas.
 
 Thus, soon after I enrolled in the Mechatronics Engineering MSc, which I
 completed in 2019 with a course grade of 18/20. This course provided me with the
@@ -46,7 +46,7 @@ print the 3D parts. Not only was I able to fulfill the goals I have set my mind
 to, with a working equipment and accompanying toolchain, as I got recognition
 for my MSc thesis with 20/20.
 
-These results paved the way to pursue my PhD in Mechanical Engineering, 
+These results paved the way to pursue my PhD in Mechanical Engineering,
 upgrading the equipment to process multiple materials, enabling 3D functional
 design of components such as biomedical and aeronautical ones. This requirement
 also led to the need for multi-laser actuation, as the different materials have

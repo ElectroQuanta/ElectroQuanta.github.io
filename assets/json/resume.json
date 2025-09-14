@@ -5,10 +5,10 @@
     "image": "",
     "email": "fringebishopeuler@gmail.com",
     "url": "https://github.com/ElectroQuanta",
-      "summary": "A mechatronics engineer that loves to learn new things, travel, and sports",
+    "summary": "A mechatronics engineer that loves to learn new things, travel, and sports",
     "location": {
       "address": "Campus de Azurem",
-	"postalCode": "4800",
+      "postalCode": "4800",
       "city": "Guimaraes",
       "countryCode": "PT",
       "region": "Braga"
@@ -23,13 +23,13 @@
   },
   "work": [
     {
-	"name": "Digital Transformation CoLab (DTx)",
+      "name": "Digital Transformation CoLab (DTx)",
       "position": "Researcher in the Electronics field",
       "url": "https://www.dtx-colab.pt/en/homepage-en/",
       "startDate": "2023-06-01",
       "endDate": "",
-	"summary": "Development of virtualization solutions for Unmanned Aerial Vehicles (UAVs) to improve the security and resilience against ill-intentioned attacks",
-	"highlights": ["Virtualization", "Hypervisor", "UAV", "Autopilot"]
+      "summary": "Development of virtualization solutions for Unmanned Aerial Vehicles (UAVs) to improve the security and resilience against ill-intentioned attacks",
+      "highlights": ["Virtualization", "Hypervisor", "UAV", "Autopilot"]
     },
     {
       "name": "Centre for MicroElectroMechanical Systems, University of Minho",
@@ -38,7 +38,7 @@
       "startDate": "2016-01-01",
       "endDate": "2023-05-31",
       "summary": "Development of a multi-material multi-laser equipment. Development of a software toolchain for preprocessing multi-material components. Development of low-level firmware for controlling the equipment. Development of manufacturing monitoring tool for the multi-material equipment. Development of an electronic scenting device.",
-	"highlights": ["3D printing", "multi-material", "software development", "firmware", "equipment development"]
+      "highlights": ["3D printing", "multi-material", "software development", "firmware", "equipment development"]
     },
     {
       "name": "Centre for Rapid and Sustainable Product Development, Institute Polytechnic of Leiria",
@@ -47,7 +47,7 @@
       "startDate": "2015-04-01",
       "endDate": "2015-12-31",
       "summary": "Software development for a laser sintering equipment",
-	"highlights": ["3D printing", "software development"]
+      "highlights": ["3D printing", "software development"]
     }
   ],
   // "volunteer": [
@@ -157,35 +157,19 @@
       "name": "Embedded systems",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "firmware development",
-        "baremetal development",
-        "RTOS development",
-        "Embedded Linux",
-        "Buildroot"
-      ]
+      "keywords": ["firmware development", "baremetal development", "RTOS development", "Embedded Linux", "Buildroot"]
     },
     {
       "name": "Robotics and Automation",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Automation and control",
-        "Industrial control",
-        "Robotics and computer vision"
-      ]
+      "keywords": ["Automation and control", "Industrial control", "Robotics and computer vision"]
     },
     {
       "name": "Software development",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Application-level development",
-        "Software architecture",
-        "C++ and Python",
-          "UI development using Qt",
-        "Database management"
-      ]
+      "keywords": ["Application-level development", "Software architecture", "C++ and Python", "UI development using Qt", "Database management"]
     }
   ],
   "languages": [
